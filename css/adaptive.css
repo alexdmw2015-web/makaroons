@@ -1,0 +1,280 @@
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header .phone {
+        display: none;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .hero-img {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .hero {
+        padding-top: 73px;
+        padding-bottom: 64px;
+    }
+
+    .header .container {
+        padding-bottom: 0;
+    }
+
+    .hero-title {
+        padding-bottom: 0;
+        margin-bottom: 88px
+    }
+
+    .hero-text {
+        padding-bottom: 0;
+        margin-bottom: 53px;
+    }
+
+    .hero-img {
+        max-width: 525px;
+        max-height: 446px;
+        justify-self: right;
+        margin-top: -70px;
+        grid-column: unset;
+        grid-row: 4 / 5;
+    }
+
+
+    .advantages-top {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 60px;
+    }
+
+    .advantages-img {
+        grid-column: unset;
+        grid-row: unset;
+        max-width: 305px;
+
+    }
+
+    .advantages-top>* {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .advantages-description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .advantage>* {
+        text-align: center;
+    }
+
+    .advantage-number {
+        padding-left: 0;
+    }
+
+    .advantage-number::before {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .order-form {
+        align-items: end;
+    }
+
+    .form-image {
+        grid-column: 2 / 3;
+    }
+
+    .form-title {
+        margin-right: -100px;
+    }
+
+    .form-instruction {
+        margin-right: -100px;
+    }
+
+    .form-section .container::before {
+        top: 40%;
+        left: 50%;
+    }
+
+    .form-section .container::after {
+        top: 25%;
+        right: 10%;
+    }
+
+    .present {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .header .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*   nav {
+        display: none;
+    } */
+
+    .burger {
+        display: flex;
+        place-self: end;
+    }
+
+    .hero-img {
+        margin-top: 37px;
+        align-self: center;
+    }
+
+    .hero-title {
+        font-weight: lighter;
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 46px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.438;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero .container {
+        justify-items: center;
+    }
+
+    .hero .container>* {
+        text-align: center;
+    }
+
+    .form-title,
+    .form-instruction {
+        margin-right: 0;
+    }
+
+
+    .order-form {
+        column-gap: unset;
+    }
+
+    .form-title {
+        font-size: 30px;
+    }
+
+    .form-instruction {
+        font-size: 16px;
+        padding-right: 0;
+    }
+
+
+
+
+    .order-form {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+    }
+
+    .form-section .container::before {
+        top: 31%;
+        right: 1%;
+        width: 72px;
+        height: 89px;
+    }
+
+    .form-section .container::after {
+        top: 31%;
+        right: 1%;
+
+    }
+
+    nav.menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.456);
+        z-index:500;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        justify-items: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.291);
+    }
+
+    nav.menu a {
+        color: white;
+    }
+
+    .close {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .menu.open {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content max-content;
+
+    }
+
+    .footer .container>* {
+        justify-self: center;
+        /*         margin-bottom: 40px; */
+
+    }
+
+    .footer .logo-container {
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .rights {
+        order: 5;
+    }
+
+
+    .footer .phone {
+        order: 2;
+        margin-bottom: 40px;
+    }
+
+    .footer-insta-link {
+        order: 3;
+    }
+
+    .insta-txt {
+        order: 4;
+        margin-bottom: 40px;
+    }
+
+
+}
