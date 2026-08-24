@@ -260,7 +260,7 @@ button:hover {
 
 .advantages-bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 220px);
+    grid-template-columns: repeat(auto-fit, 210px);
     gap: 90px;
     justify-content: center;
 }
